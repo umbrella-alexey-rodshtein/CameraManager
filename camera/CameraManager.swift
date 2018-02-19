@@ -823,14 +823,14 @@ open class CameraManager: NSObject, AVCaptureFileOutputRecordingDelegate, UIGest
     }
     
     fileprivate func _currentVideoOrientation() -> AVCaptureVideoOrientation {
-        switch UIDevice.current.orientation {
-        case .landscapeLeft:
-            return .landscapeRight
-        case .landscapeRight:
-            return .landscapeLeft
-        default:
+//        switch UIDevice.current.orientation {
+//        case .landscapeLeft:
+//            return .landscapeRight
+//        case .landscapeRight:
+//            return .landscapeLeft
+//        default:
             return .portrait
-        }
+//        }
     }
     
     fileprivate func _canLoadCamera() -> Bool {
